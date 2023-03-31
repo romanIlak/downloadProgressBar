@@ -1,12 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    
-</body>
+    <style>
+      .wrapper {
+        margin: auto;
+        text-align: center;
+        max-width: 500px;
+      }
+
+      .progressLine {
+        background-color: rgb(66, 189, 55);
+        bottom: 0;
+        left: 0;
+        top: 0;
+        position: absolute;
+      }
+
+      .progressLine-bg {
+        background-color: rgb(161, 8, 8);
+        border-radius: 10px;
+        height: 20px;
+        overflow: hidden;
+        position: relative;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="progressLine-bg">
+        <div class="progressLine" id="progressLine"></div>
+      </div>
+      <button class="Start" id="start">Start</button>
+      <button class="Stop" id="stop">Stop</button>
+      <div class="progressCount" id="progressCount"></div>
+    </div>
+    <script src="index.js"></script>
+  </body>
 </html>
